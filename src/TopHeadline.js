@@ -1,11 +1,9 @@
 import React from 'react'
 
 const TopHeadline = (props) => {
-    // console.log(props.topHeadline);
-    
     if(props.topHeadline){
         return (
-            <div>
+            <div id="top-article">
                 <p>{props.topHeadline.source.name}</p>
                 <h1>{props.topHeadline.title}</h1>
                 <img src={props.topHeadline.urlToImage} alt={props.topHeadline.title}></img>
@@ -15,7 +13,7 @@ const TopHeadline = (props) => {
         ) 
     } else {
         return (
-            <div>Page Is Loading</div>
+            <div>Page is loading...</div>
         )
     }
 }

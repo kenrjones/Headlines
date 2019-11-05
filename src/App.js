@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios'
-import TopHeadline from './TopHeadline';
-import StripHeadlines from './StripHeadlines';
+import Home from './Home'
 import MoreHeadlines from './MoreHeadlines';
-import About from './About';
 import './App.css';
 import dotenv from 'dotenv'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
@@ -23,13 +21,13 @@ class App extends Component {
       method: 'GET',
       url: url
     }).then(response => {
-      let sliced = response.data.articles.slice(1, 4)
-      // console.log(sliced)
+      let strip = response.data.articles.slice(1, 4)
+      let more = response.data.articles.slice(4, 14)
       this.setState({        
         topHeadline: response.data.articles[0],
-        stripHeadlines: sliced
+        stripHeadlines: strip,
+        moreHeadlines: more
       })
-      // console.log(response.data.articles)
     })
   }
   componentDidMount() {
@@ -37,26 +35,21 @@ class App extends Component {
   }
 
   render() {
-    // console.log(process.env.REACT_APP_NEWS_API_KEY);
-    // console.log(this.state);
     return (
       <Router>
         <nav>
-          <Link to="/">Home</Link>{' '}
-          <Link to="/moreheadline">More Headlines</Link>{' '}
-          <Link to="/about">About</Link>
+          <Link to="/home">Home</Link>{' '}
+          <Link to="/moreheadlines">More Headlines</Link>{' '}
         </nav>
 
         <div>
-          <Route exact path="/" />
-          <Route path="/moreheadlines" component={MoreHeadlines} />
-          <Route path="/about" component={About} />
+          <Route exact path="/home" component={()=> <Home topHeadline={this.state.topHeadline} stripHeadlines={this.state.stripHeadlines} /> } /> 
+          <Route path="/moreheadlines" component={()=> <MoreHeadlines moreHeadlines={this.state.moreHeadlines} /> } />
         </div>
 
-        <div>
-          <TopHeadline topHeadline={this.state.topHeadline} />
-          <StripHeadlines stripHeadlines={this.state.stripHeadlines} /> 
-        </div>
+        <footer id="footer">
+          <p>This is a footer</p>
+        </footer>
 
       </Router>
     )
