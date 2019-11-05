@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import axios from 'axios'
 import './App.css';
+import dotenv from 'dotenv'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const url = 'https://newsapi.org/v2/top-headlines?' + 'country=us&' + 'apiKey=2fbfd60a715c400081cecdd7c3238037'
 
-export default App;
+class App extends Component {
+    constructor(props) {
+      super(props)
+    }
+      render() {
+        console.log(process.env.REACT_APP_NEWS_API_KEY);
+
+        return(
+            <div></div>
+        )
+      }
+    }
+
+    axios({
+        method: 'GET',
+        url: url
+      })
+      
+      .then(response => {
+        console.log(response)
+      })
+      
+export default App
+
+
+
