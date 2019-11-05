@@ -1,16 +1,20 @@
 import React, {Component} from 'react';
 import axios from 'axios'
 import TopHeadline from './TopHeadline';
+import StripHeadlines from './StripHeadlines';
+import MoreHeadlines from './MoreHeadlines';
+import About from './About';
 import './App.css';
 import dotenv from 'dotenv'
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      topHeadline: ''
-
+      topHeadline: '',
+      stripHeadlines:[]
     }
   }
   getTopHeadlines() {
@@ -19,10 +23,13 @@ class App extends Component {
       method: 'GET',
       url: url
     }).then(response => {
-      this.setState({
+      let sliced = response.data.articles.slice(1, 4)
+      // console.log(sliced)
+      this.setState({        
         topHeadline: response.data.articles[0],
+        stripHeadlines: sliced
       })
-      console.log(response.data.articles)
+      // console.log(response.data.articles)
     })
   }
   componentDidMount() {
@@ -30,14 +37,30 @@ class App extends Component {
   }
 
   render() {
-    console.log(process.env.REACT_APP_NEWS_API_KEY);
-    console.log(this.state.topHeadlines);
+    // console.log(process.env.REACT_APP_NEWS_API_KEY);
+    // console.log(this.state);
     return (
-      <div>
-        <TopHeadline topHeadline={this.state.topHeadline} />
-      </div>
+      <Router>
+        <nav>
+          <Link to="/">Home</Link>{' '}
+          <Link to="/moreheadline">More Headlines</Link>{' '}
+          <Link to="/about">About</Link>
+        </nav>
+
+        <div>
+          <Route exact path="/" />
+          <Route path="/moreheadlines" component={MoreHeadlines} />
+          <Route path="/about" component={About} />
+        </div>
+
+        <div>
+          <TopHeadline topHeadline={this.state.topHeadline} />
+          <StripHeadlines stripHeadlines={this.state.stripHeadlines} /> 
+        </div>
+
+      </Router>
     )
-   }
+  }
 }
 
    
