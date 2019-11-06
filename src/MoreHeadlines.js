@@ -5,17 +5,17 @@ const MoreHeadlines = (props) => {
     if (props.moreHeadlines) {
         let moreAricles = props.moreHeadlines.map( (headline, index) => {
             return (
-                <div key={index} className="more-articles">
+                <div key={index} id="more-articles">
+                    <img src={headline.urlToImage} alt={headline.title}></img>
                     <p>{headline.source.name}</p>
                     <h1>{headline.title}</h1>
-                    <img src={headline.urlToImage} alt={headline.title}></img>
-                    <p>{headline.description}</p>
-                    <p>{headline.author}</p>
+                    {/* <p>{headline.description}</p>
+                    <p>{headline.author}</p> */}
                 </div>
             )
         })
         return (
-            <div className="moreheadlines-container">
+            <div id="moreheadlines-container">
                 {moreAricles}
             </div>
         )

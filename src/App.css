@@ -34,7 +34,6 @@
 #strip-container {
   display: flex;
   flex-direction: row;
-  /* width: 100%; */
   margin: 0px 70px 130px 70px;
   justify-content: space-between;
 }
@@ -46,6 +45,29 @@
 }
 
 #srtip-articles img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+/* MoreHeadlines */
+#moreheadlines-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px 70px 130px 70px;
+  justify-content: space-between;
+}
+
+#more-articles {
+  width: 32%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+#more-articles img {
   width: 100%;
   height: 70%;
   object-fit: cover;

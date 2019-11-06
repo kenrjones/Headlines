@@ -23,7 +23,7 @@ class App extends Component {
     }).then(response => {
       let articles = response.data.articles
       let stripHeadlines = articles.slice(1, 4)
-      let moreHeadlines = articles.slice(4, 14)
+      let moreHeadlines = articles.slice(4, 16)
       this.setState({        
         topHeadline: articles[0],
         stripHeadlines,
