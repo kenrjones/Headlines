@@ -21,12 +21,13 @@ class App extends Component {
       method: 'GET',
       url: url
     }).then(response => {
-      let strip = response.data.articles.slice(1, 4)
-      let more = response.data.articles.slice(4, 14)
+      let articles = response.data.articles
+      let stripHeadlines = articles.slice(1, 4)
+      let moreHeadlines = articles.slice(4, 14)
       this.setState({        
-        topHeadline: response.data.articles[0],
-        stripHeadlines: strip,
-        moreHeadlines: more
+        topHeadline: articles[0],
+        stripHeadlines,
+        moreHeadlines
       })
     })
   }
@@ -37,9 +38,10 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <nav>
-          <Link to="/home">Home</Link>{' '}
-          <Link to="/moreheadlines">More Headlines</Link>{' '}
+        <nav id="nav">
+          <h1>HEADLINES</h1>
+          <Link to="/home">Home</Link>
+          <Link to="/moreheadlines">More Headlines</Link>
         </nav>
 
         <div>
