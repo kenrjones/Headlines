@@ -1,10 +1,12 @@
 import React from 'react'
 
-const StripHeadlines = (props) => {
-    if (props.stripHeadlines) {
-        let newsStrip = props.stripHeadlines.map( (headline, index) => {
+const TrendingHeadlines = (props) => {
+    console.log(props);
+    
+    if (props.trendingHeadlines) {
+        let trendingNews = props.trendingHeadlines.map( (headline, index) => {
             return (
-                <div key={index} id="srtip-articles">
+                <div key={index} id="trending-articles">
                     <img src={headline.urlToImage} alt={headline.title}></img>
                     <p>{headline.source.name}</p>
                     <h1>{headline.title}</h1>
@@ -14,8 +16,8 @@ const StripHeadlines = (props) => {
             )
         })
         return (
-            <div id="strip-container">
-                {newsStrip}
+            <div id="trending-container">
+                {trendingNews}
             </div>
         )
     } else {
@@ -25,4 +27,4 @@ const StripHeadlines = (props) => {
     }
 }
 
-export default StripHeadlines
+export default TrendingHeadlines

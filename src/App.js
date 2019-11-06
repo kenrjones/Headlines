@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios'
-import Home from './Home'
+import TopHeadlines from './TopHeadlines'
 import MoreHeadlines from './MoreHeadlines';
 import './App.css';
 import dotenv from 'dotenv'
@@ -11,28 +11,28 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      topHeadline: '',
-      stripHeadlines:[]
+      featuredHeadline: '',
+      trendingHeadlines:[]
     }
   }
-  getTopHeadlines() {
+  getFeaturedHeadline() {
     const url = 'https://newsapi.org/v2/top-headlines?' + 'country=us&' + 'apiKey=2fbfd60a715c400081cecdd7c3238037'
     axios({
       method: 'GET',
       url: url
     }).then(response => {
       let articles = response.data.articles
-      let stripHeadlines = articles.slice(1, 4)
+      let trendingHeadlines = articles.slice(1, 4)
       let moreHeadlines = articles.slice(4, 16)
       this.setState({        
-        topHeadline: articles[0],
-        stripHeadlines,
+        featuredHeadline: articles[0],
+        trendingHeadlines,
         moreHeadlines
       })
     })
   }
   componentDidMount() {
-    this.getTopHeadlines()
+    this.getFeaturedHeadline()
   }
 
   render() {
@@ -40,12 +40,12 @@ class App extends Component {
       <Router>
         <nav id="nav">
           <h1>HEADLINES</h1>
-          <Link to="/home">Home</Link>
+          <Link to="/featuredheadline">Top Headlines</Link>
           <Link to="/moreheadlines">More Headlines</Link>
         </nav>
 
         <div>
-          <Route exact path="/home" component={()=> <Home topHeadline={this.state.topHeadline} stripHeadlines={this.state.stripHeadlines} /> } /> 
+          <Route exact path="/featuredheadline" component={()=> <TopHeadlines featuredHeadline={this.state.featuredHeadline} trendingHeadlines={this.state.trendingHeadlines} /> } /> 
           <Route path="/moreheadlines" component={()=> <MoreHeadlines moreHeadlines={this.state.moreHeadlines} /> } />
         </div>
 
