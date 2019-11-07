@@ -7,7 +7,7 @@ const MoreHeadlines = (props) => {
     if (props.moreHeadlines) {
         let moreAricles = props.moreHeadlines.map( (headline, index) => {
             return (
-                <div key={index} id="more-articles">
+                <div key={index} className='more-articles'>
                     <img src={headline.urlToImage} alt={headline.title}></img>
                     <p className="article-source">{headline.source.name}</p>
                     <h1 className="article-title">{headline.title}</h1>
