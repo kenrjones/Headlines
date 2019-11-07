@@ -47,7 +47,7 @@ class App extends Component {
         </nav>
 
         <div>
-          <Route exact path="/" component={()=> <TopHeadlines featuredHeadline={this.state.featuredHeadline} trendingHeadlines={this.state.trendingHeadlines} /> } /> 
+          <Route exact path="/topheadlines" component={()=> <TopHeadlines featuredHeadline={this.state.featuredHeadline} trendingHeadlines={this.state.trendingHeadlines} /> } /> 
           <Route path="/moreheadlines" component={()=> <MoreHeadlines moreHeadlines={this.state.moreHeadlines} /> } />
         </div>
 
