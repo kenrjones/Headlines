@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 import axios from 'axios'
 import TopHeadlines from './TopHeadlines'
 import MoreHeadlines from './MoreHeadlines';
+import BackToTop from 'react-back-to-top-button';
 import './App.css';
 import dotenv from 'dotenv'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {HashRouter, Route, Link} from 'react-router-dom';
 
 
 class App extends Component {
@@ -39,28 +40,29 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <HashRouter basename='/'>
         <nav id="nav">
-          <h1>HEADLINES</h1>
-          <Link to="/topheadlines">Top Headlines</Link>
+          <Link to="/" id="logo">HEADLINES</Link>
           <Link to="/moreheadlines">More Headlines</Link>
         </nav>
 
         <div>
           <Route exact path="/" component={()=> <TopHeadlines featuredHeadline={this.state.featuredHeadline} trendingHeadlines={this.state.trendingHeadlines} /> } /> 
-          <Route path="/topheadlines" component={()=> <TopHeadlines featuredHeadline={this.state.featuredHeadline} trendingHeadlines={this.state.trendingHeadlines} /> } /> 
           <Route path="/moreheadlines" component={()=> <MoreHeadlines moreHeadlines={this.state.moreHeadlines} /> } />
+          <BackToTop showOnScrollUp showAt={100} speed={1500} easing="easeInOutQuint">
+                <span className="top">^</span>
+            </BackToTop> 
         </div>
+        
 
         <footer id="footer">
           <nav className="footer-nav"> 
             <h1>HEADLINES</h1> 
             <p className="footer-copy">&copy;2019 Designed by Kendrick R Jones</p>
           </nav>
-          <a className="footer-top" href="#top">Back to top</a>
         </footer>
 
-      </Router>
+      </HashRouter>
     )
   }
 }
