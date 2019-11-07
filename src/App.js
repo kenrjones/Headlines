@@ -29,6 +29,8 @@ class App extends Component {
         trendingHeadlines,
         moreHeadlines
       })
+      console.log(response.data.articles);
+      
     })
   }
   componentDidMount() {
@@ -50,7 +52,11 @@ class App extends Component {
         </div>
 
         <footer id="footer">
-          <p>This is a footer</p>
+          <nav className="footer-nav"> 
+            <h1>HEADLINES</h1> 
+            <p className="footer-copy">&copy;2019 Designed by Kendrick R Jones</p>
+          </nav>
+          <a className="footer-top" href="#top">Back to top</a>
         </footer>
 
       </Router>

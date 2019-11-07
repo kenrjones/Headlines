@@ -8,10 +8,10 @@ const TrendingHeadlines = (props) => {
             return (
                 <div key={index} id="trending-articles">
                     <img src={headline.urlToImage} alt={headline.title}></img>
-                    <p>{headline.source.name}</p>
-                    <h1>{headline.title}</h1>
+                    <p className="article-source">{headline.source.name}</p>
+                    <h1 className="article-title">{headline.title}</h1>
                     {/* <p>{headline.description}</p> */}
-                    {/* <p>{headline.author}</p> */}
+                    <a className="link" href = {headline.url} target="_blank">READ MORE</a>
                 </div>
             )
         })

@@ -8,7 +8,8 @@ const FeaturedHeadline = (props) => {
                 <div>
                     <p className="featured-source">{props.featuredHeadline.source.name}</p>
                     <h1 className="featured-title">{props.featuredHeadline.title}</h1>
-                    {/* <p className="featured-description">{props.featuredHeadline.description}</p> */}
+                    <p className="featured-description">{props.featuredHeadline.description}</p>
+                    <a className="link" href = {props.featuredHeadline.url} target="_blank">READ MORE</a>
                     {/* <p classname="featured-author">{props.featuredHeadline.author}</p> */}
                 </div>
                 <div>

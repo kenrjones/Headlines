@@ -1,20 +1,32 @@
+
 /* Nav */
 #nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 10px 0px 120px 70px;
+  margin: 30px 0px 40px 70px;
 }
 
-#nav h1 {
-  margin-right: 3%;
+#nav h1 { 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 30px;
+  color: white;
+  background-color: #EF5A0A ;
+  padding: 8px;
+  margin-right: 2%;
 }
 
 #nav a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
   text-decoration: none;
-  margin-right: 3%;
   color: black;
+  margin-right: 2%;
 }
+
 
 /* FeaturedHeadline */
 #featured-headline {
@@ -25,16 +37,78 @@
 }
 
 .featured-image {
-  width: 700px;
+  width: 715px;
   height: 500px;
+  position: relative;
   object-fit: cover;
+  background-image: url("./Images/absolutvision-bSlHKWxxXak-unsplash.jpg");
+  background-size: cover; 
+  
+}
+
+.featured-source {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0px 50px 20px 0px;
+  text-decoration: none;
+  color: #EF5A0A;
+}
+
+.featured-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  color: black;
+  margin: 0px 50px 20px 0px;
+}
+
+.featured-description {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0px 50px 30px 0px;
+  text-decoration: none;
+  color: black;
+}
+
+.article-source {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0px 30px 10px 0px;
+  align-items: baseline;
+  text-decoration: none;
+  color: #EF5A0A;
+}
+
+.article-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: black;
+  margin: 0px 30px 20px 0px;
+}
+
+.link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #EF5A0A;
+  padding: 6px;
+  height: min-content
 }
 
 /* TrendingHeadlines */
 #trending-container {
   display: flex;
   flex-direction: row;
-  margin: 0px 70px 130px 70px;
+  flex-wrap: wrap;
+  margin: 0px 70px 70px 70px;
   justify-content: space-between;
 }
 
@@ -42,11 +116,26 @@
   width: 32%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 
 #trending-articles img {
-  width: 100%;
-  height: 70%;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  object-fit: cover;
+  margin-bottom: 20px;
+  background-image: url("./Images/absolutvision-bSlHKWxxXak-unsplash.jpg");
+  background-size: cover; 
+}
+
+/* Front Image */
+.front-image {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin: 0px 70px 50px 70px;
   object-fit: cover;
 }
 
@@ -55,21 +144,35 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0px 70px 130px 70px;
+  margin: 0px 70px 0px 70px;
   justify-content: space-between;
 }
 
 #more-articles {
   width: 32%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin-bottom: 150px;
+  align-items: baseline;
+  margin-bottom: 80px;
 }
 
 #more-articles img {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  object-fit: cover;
+  margin-bottom: 20px;
+  background-image: url("./Images/absolutvision-bSlHKWxxXak-unsplash.jpg");
+  background-size: cover;
+}
+
+/* Inside Image */
+.inside-image {
+  display: flex;
   width: 100%;
-  height: 70%;
+  height: 100%;
+  margin: 0px 0px 80px 0px;
   object-fit: cover;
 }
 
@@ -77,6 +180,47 @@
 #footer {
   display: flex;
   width: 100%;
-  height: 200px;
+  height: 225px;
   background-color: black;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 30px 70px 0px 70px;
+  justify-content: flex-start;
+}
+
+.footer-nav h1 { 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 30px;
+  color: white;
+  background-color: #EF5A0A ;
+  padding: 8px;
+  margin-right: 8%;
+}
+
+.footer-nav p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-top {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 30px 70px 0px 70px;
+  justify-content: flex-end;
 }
