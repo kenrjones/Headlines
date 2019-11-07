@@ -42,12 +42,12 @@ class App extends Component {
       <Router>
         <nav id="nav">
           <h1>HEADLINES</h1>
-          <Link to="/featuredheadline">Top Headlines</Link>
+          <Link to="/topheadline">Top Headlines</Link>
           <Link to="/moreheadlines">More Headlines</Link>
         </nav>
 
         <div>
-          <Route exact path="/featuredheadline" component={()=> <TopHeadlines featuredHeadline={this.state.featuredHeadline} trendingHeadlines={this.state.trendingHeadlines} /> } /> 
+          <Route exact path="/topheadline" component={()=> <TopHeadlines featuredHeadline={this.state.featuredHeadline} trendingHeadlines={this.state.trendingHeadlines} /> } /> 
           <Route path="/moreheadlines" component={()=> <MoreHeadlines moreHeadlines={this.state.moreHeadlines} /> } />
         </div>
 
