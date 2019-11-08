@@ -2,7 +2,6 @@ import React from 'react'
 import FeaturedHeadline from './FeaturedHeadline';
 import TrendingHeadlines from './TrendingHeadlines';
 import Equality from './Images/Equality_Act_Web_Banner_1600x900.jpg';
-import BackToTop from 'react-back-to-top-button';
 import './App.css';
 
 const TopHeadlines = (props) => {

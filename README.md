@@ -1,68 +1,36 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# REACT WEB APPLICATION
 
-In the project directory, you can run:
+- **Problem**
+  - With the growing amount of outlets engaged in a desperate fight for readers and subscribers legacy news outlets are fighting with social media and digital-native news outlets for the role as the most popular platform for news consumption.
 
-### `npm start`
+- **Goal**
+  - Design a clean, elegant and fairly sleek product for the ‘Headlines’ app that provides its users with a fresh way to consume national news and drives users to to subscribe directly to ‘Headlines’ as their main news platform.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Resource**
+  - newsapi.org - Allows you to get breaking news headlines, and search for articles from over 30,000 news sources and blogs.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- **Research Method**
+  - 1:1 interviews
+    - **Questions**
+        - Age:
+        - Occupation:
+        - Question 1: What website or applications do you use to consume local and nation news? (List top three)
+        - Question 2: What is your main goal when visiting your preferred news website or application?
+        - Question 3: What element of the presented content are you most attracted to? (Image, Text, Color
+        - Question 4: What obstacles do you encounter while attempting to consume the news?
+        - Question 5: Are there any improvements you would like to see made to the websites or applications in which you use to consume news? 
+        - Question 6:What haven’t we asked you today that you think would be valuable for us to know?
 
-### `npm test`
+## USER STORIES + PERSONAS
+![Uers Stories](src/User Stories + Personas/Interapt_GA_Project2_UserStories.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Uers Stories](/Users/kendrickjones/sei/projects/react-news-app/src/User Stories + Personas/Interapt_GA_Project2_Persona01.png)
 
-### `npm run build`
+![Uers Stories](/Users/kendrickjones/sei/projects/react-news-app/src/User Stories + Personas/Interapt_GA_Project2_Persona02.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Uers Stories](/Users/kendrickjones/sei/projects/react-news-app/src/User Stories + Personas/Interapt_GA_Project2_Persona03.png)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
