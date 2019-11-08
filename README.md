@@ -25,16 +25,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## USER STORIES + PERSONAS
 ![UserStories]
-(src/User Stories + Personas/Interapt_GA_Project2_UserStories.png)
+(https://git.generalassemb.ly/kenrjones/GA-SEI-Project-2/blob/master/src/User%20Stories%20%2B%20Personas/Interapt_GA_Project2_UserStories.png)
 
 ![Persona1]
-(src/User Stories + Personas/Interapt_GA_Project2_Persona01.png)
+(https://git.generalassemb.ly/kenrjones/GA-SEI-Project-2/blob/master/src/User%20Stories%20%2B%20Personas/Interapt_GA_Project2_Persona01.png)
 
 ![Persona2]
-(src/User Stories + Personas/Interapt_GA_Project2_Persona02.png)
+(https://git.generalassemb.ly/kenrjones/GA-SEI-Project-2/blob/master/src/User%20Stories%20%2B%20Personas/Interapt_GA_Project2_Persona02.png)
 
 ![Persona3]
-(src/User Stories + Personas/Interapt_GA_Project2_Persona03.png)
+(https://git.generalassemb.ly/kenrjones/GA-SEI-Project-2/blob/master/src/User%20Stories%20%2B%20Personas/Interapt_GA_Project2_Persona03.png)
 
 
 
