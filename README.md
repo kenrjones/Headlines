@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - With the growing amount of outlets engaged in a desperate fight for readers and subscribers legacy news outlets are fighting with social media and digital-native news outlets for the role as the most popular platform for news consumption.
 
 - **Goal**
-  - Design a clean, elegant and fairly sleek product for the ‘Headlines’ app that provides its users with a fresh way to consume national news and drives users to to subscribe directly to ‘Headlines’ as their main news platform.
+  - Design a clean, elegant and fairly sleek product for the ‘Headlines’ app that provides its users with a fresh way to consume national news and drives users to use ‘Headlines’ as their main news platform.
 
 - **Resource**
   - newsapi.org - Allows you to get breaking news headlines, and search for articles from over 30,000 news sources and blogs.
