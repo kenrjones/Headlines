@@ -21,7 +21,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
         - Question 3: What element of the presented content are you most attracted to? (Image, Text, Color
         - Question 4: What obstacles do you encounter while attempting to consume the news?
         - Question 5: Are there any improvements you would like to see made to the websites or applications in which you use to consume news? 
-        - Question 6:What haven’t we asked you today that you think would be valuable for us to know?
+        - Question 6: What haven’t we asked you today that you think would be valuable for us to know?
 
 ## USER STORIES + PERSONAS
 ![UserStories](https://git.generalassemb.ly/kenrjones/GA-SEI-Project-2/blob/master/User%20Stories%20%2B%20Personas/Interapt_GA_Project2_UserStories.png)
