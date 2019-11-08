@@ -24,13 +24,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
         - Question 6:What haven’t we asked you today that you think would be valuable for us to know?
 
 ## USER STORIES + PERSONAS
-![Uers Stories](./User Stories + Personas/Interapt_GA_Project2_UserStories.png)
+![UserStories]
+(src/User Stories + Personas/Interapt_GA_Project2_UserStories.png)
 
-![Uers Stories](./Users/kendrickjones/sei/projects/react-news-app/src/User Stories + Personas/Interapt_GA_Project2_Persona01.png)
+![Persona1]
+(src/User Stories + Personas/Interapt_GA_Project2_Persona01.png)
 
-![Uers Stories](./Users/kendrickjones/sei/projects/react-news-app/src/User Stories + Personas/Interapt_GA_Project2_Persona02.png)
+![Persona2]
+(src/User Stories + Personas/Interapt_GA_Project2_Persona02.png)
 
-![Uers Stories](./Users/kendrickjones/sei/projects/react-news-app/src/User Stories + Personas/Interapt_GA_Project2_Persona03.png)
+![Persona3]
+(src/User Stories + Personas/Interapt_GA_Project2_Persona03.png)
 
 
 
