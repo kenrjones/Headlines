@@ -49,7 +49,7 @@ class App extends Component {
         <div>
           <Route exact path="/" component={()=> <TopHeadlines featuredHeadline={this.state.featuredHeadline} trendingHeadlines={this.state.trendingHeadlines} /> } /> 
           <Route path="/moreheadlines" component={()=> <MoreHeadlines moreHeadlines={this.state.moreHeadlines} /> } />
-          <BackToTop showOnScrollUp showAt={100} speed={1500} easing="easeInOutQuint">
+          <BackToTop  showOnScrollUp showAt={80} speed={1000} easing="easeInOutQuint">
                 <span className="top">^</span>
             </BackToTop> 
         </div>

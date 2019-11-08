@@ -32,11 +32,11 @@
   display: flex;
   flex-direction: row;
   width: 90%;
-  margin: 100px 0px 80px 70px;
+  margin: 100px 0px 80px 62px;
 }
 
 .featured-image {
-  width: 715px;
+  width: 710px;
   height: 500px;
   position: relative;
   object-fit: cover;
@@ -134,7 +134,7 @@
   display: flex;
   width: 90%;
   height: 100%;
-  margin: 0px 70px 50px 70px;
+  margin: 0px 62px 50px 62px;
   object-fit: cover;
 }
 
@@ -169,7 +169,7 @@
 /* Inside Image */
 .inside-image {
   display: flex;
-  width: 100%;
+  width: 99%;
   height: 100%;
   margin: 0px 0px 80px 0px;
   object-fit: cover;
@@ -220,4 +220,5 @@
   background-color: #EF5A0A ;
   padding: 4px;
   height: 4px;
+  margin-right: 5px;
 }
